@@ -1,0 +1,52 @@
+.header {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    @media (max-width: $mobile-s) {
+      min-height: 70px;
+    }
+  }
+  &__menu {
+    padding: 5px 0;
+    margin: 0 0 0 133px;
+    @media (max-width: $tablet) {
+      margin: 0 0 0 80px;
+    }
+    @media (max-width: $mobile) {
+      margin: 0 0 0 40px;
+    }
+    @media (max-width: $mobile-s) {
+      margin: 0 0 0 20px;
+    }
+  }
+  &__logo {
+    @include font;
+    font-size: 24px;
+    font-style: bold;
+    font-weight: 700;
+  }
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item:not(:last-child) {
+  margin: 0px 21px 0px 0px;
+}
+.menu__link {
+  line-height: 171%;
+  font-weight: 600;
+  @include font;
+  @media (max-width: $mobile-s) {
+    font-size: 18px;
+  }
+}

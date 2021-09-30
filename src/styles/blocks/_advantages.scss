@@ -1,0 +1,82 @@
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+  &__title {
+    font-size: 40px;
+    line-height: 142%;
+    font-weight: 700;
+    @media (max-width: $tablet) {
+      font-size: 35px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: rgba(115, 115, 115, 1);
+    line-height: 142%;
+  }
+}
+
+.header-block__title:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.advantages {
+  padding: 80px 0px;
+  @media (max-width: $tablet) {
+    padding: 50px 0px;
+  }
+  @media (max-width: $mobile) {
+    padding: 30px 0px;
+  }
+  &__body {
+    display: flex;
+    margin: 0px -15px -30px;
+    flex-wrap: wrap;
+  }
+  &__column {
+    padding: 0px 15px;
+    margin: 0px 0px 30px 0px;
+    flex: 0 1 25%;
+    @media (max-width: 1000px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 560px) {
+      flex: 0 1 100%;
+    }
+  }
+  &__item {
+    background-color: #fff;
+    padding: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__value {
+    font-size: 40px;
+    line-height: 142%;
+  }
+  &__text {
+    line-height: 150%;
+    color: rgba(115, 115, 115, 1);
+    font-size: 16px;
+    letter-spacing: 0.1px;
+  }
+  &__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  &__header {
+    margin: 0px 0px 50px 0px;
+    @media (max-width: $tablet) {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+}
+
+.advantages__item > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}

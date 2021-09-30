@@ -1,4 +1,10 @@
-$h1-fz-mobile: 20px;
-$h1-fz-tablet: 32px;
-$h1-fz-desktop: 48px;
-$h1-fw: 400;
+
+//colors
+$accent-green: #0D5C63;
+$accent-orange: #FF7B47;
+$accent-blue: #17213C;
+
+//breakpoints
+$tablet: 992px; 
+$mobile: 767px;
+$mobile-s: 479px;

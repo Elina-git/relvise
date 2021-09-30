@@ -1,0 +1,92 @@
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  @media (max-width: $tablet) {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1300px) {
+  .main-block__image img {
+    object-position: right;
+  }
+}
+
+.main-block__body > *:not(:last-child) {
+  padding-bottom: 35px;
+}
+.main-block {
+  position: relative;
+  &__body {
+    padding: 184px 0 191px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 409px;
+    @media (max-width: $tablet) {
+      padding: 120px 0px 191px 0px;
+    }
+    @media (max-width: $mobile-s) {
+      padding: 115px 0px 160px 0px;
+    }
+  }
+  &__title {
+    @include font;
+    font-size: 58px;
+    line-height: 137%;
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    @media (max-width: 479px) {
+      font-size: 42px;
+    }
+  }
+  &__text {
+    @include font;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    @media (max-width: $mobile-s) {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.main-block__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0px;
+}
+.main-block__button {
+  background-color: orange;
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 36px;
+  min-height: 48px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-weight: 700px;
+  line-height: 150%;
+  text-align: center;
+  margin: 10px 0;
+  @media (max-width: $mobile-s) {
+    flex: 1 1 auto;
+  }
+}
+.main-block__button_orange {
+  background-color: $accent-orange;
+  color: #fff;
+  letter-spacing: 0.2px;
+}
+
+.main-block__button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.main-block__button_border {
+  background-color: transparent;
+  color: $accent-green;
+  border: 1px solid $accent-green;
+}

@@ -1,0 +1,51 @@
+.practice {
+  margin: 125px 80px;
+  &__header {
+    margin: 0px 0px 45px 0px;
+  }
+  &__body {
+    margin: 0px -20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    padding: 0px 20px;
+    flex: 0 1 25%;
+  }
+}
+
+.item-practice {
+  background-color: #fff;
+  &__content {
+    padding: 30px;
+  }
+  &__link {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+    color: inherit;
+    display: inline-block;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+  &__title {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+  }
+  &__text {
+    color: #737373;
+    line-height: 143%;
+  }
+  &__image {
+    display: block;
+    padding-bottom: 60%;
+  }
+}
+
+.item-practice__link:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
